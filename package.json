@@ -1,0 +1,20 @@
+{
+  "name": "sma-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "migrate": "node src/db/migrate.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jose": "^5.9.3",
+    "mysql2": "^3.11.3",
+    "pino": "^9.4.0",
+    "pino-http": "^10.3.0",
+    "dotenv": "^16.4.5"
+  }
+}

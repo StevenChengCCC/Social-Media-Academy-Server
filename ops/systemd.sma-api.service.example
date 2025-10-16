@@ -1,0 +1,16 @@
+[Unit]
+Description=Social Media Academy API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/sma-api
+ExecStart=/usr/bin/node src/server.js
+Restart=always
+Environment=NODE_ENV=production
+EnvironmentFile=/opt/sma-api/.env
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
